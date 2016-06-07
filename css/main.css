@@ -1,0 +1,121 @@
+body{
+	text-align: center;
+	background: url("../img/white-wallpapers-8.jpg");
+	background-color: #b7e8df;
+	background-blend-mode: multiply;
+	color: #f9f9f9;
+}
+
+header {
+	padding: 2.5px;
+	background: linear-gradient(180deg, rgba(0,0,0,.8), transparent);
+}
+
+#title {
+	font-size: 3em;
+	font-family: 'Dancing Script', cursive;
+	font-weight: 700;
+	/*margin: 15px auto;*/
+}
+
+/*.canvas-container {
+	display: inline-block;
+	position: relative;
+}*/
+
+/*.box-overlay {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	background-color: rgba(0, 0, 0, .6);
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.box-overlay:hover {
+	opacity: 1;
+}
+
+.box-overlay h3 {
+	display: inline-block;
+	position: absolute;
+	top: 33.3%;
+	left: 27.5%;
+
+}*/
+
+canvas {
+	background-color: #f9f9f9;
+	border: 1px solid #000;
+	height: 20vh;
+	width: 15vw;
+	/*position: relative;*/
+	/*position: absolute;*/
+	/*-webkit-transition-duration: 1s;*/
+	/*-webkit-animation: rotateSquares 1s;*/
+	transition: transform .5s cubic-bezier(.7, -0.50, .31, 1.70), background-color .5s cubic-bezier(.7, -0.50, .31, 1.70);
+}
+
+canvas:hover {
+	background-color: #abe1fc;
+	transform: scale(1.1);
+}
+
+#player1 {
+	font-family: 'Dancing Script', cursive;
+	float: left;
+	margin-left: 10vw;
+	transition: transform 1s cubic-bezier(.7, -0.50, .31, 1.70) .2s, color 1s cubic-bezier(.7, -0.50, .31, 1.70) .2s;
+	/*transition-duration: 1s;
+	transition-delay: .2s;*/
+	transform: scale(1.5);
+	color: #abe1fc;
+	/*position: absolute;
+	top: 35vh;
+	left: 10vw;
+	display: none;
+	font-size: .9rem;*/
+}
+
+#player2 {
+	font-family: 'Dancing Script', cursive;
+	float: right;
+	margin-right: 10vw;
+	transition: transform 1s cubic-bezier(.7, -0.50, .31, 1.70) .2s, color 1s cubic-bezier(.7, -0.50, .31, 1.70) .2s;
+}
+
+.player h2 {
+	margin-bottom: 5px;
+}
+
+.player h3 {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+
+/*@-webkit-keyframes rotateSquares {
+	0% {-webkit-transform: rotate(0);}
+	10% {-webkit-transform: rotate(-5deg);}
+	50% {-webkit-transform: rotate(180deg);}
+	90% {-webkit-transform: rotate(365deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}*/
+
+.group {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+.group:after {
+	content: "";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
